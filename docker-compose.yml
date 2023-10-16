@@ -1,0 +1,14 @@
+version: "3"
+services:
+  desktop:
+    env_file: environment.env
+    build: .
+    restart: unless-stopped
+    image: desktop:latest
+    ports:
+      - "3389:3389"
+    volumes:
+      - home:/home
+volumes:
+  home:
+    external: false
