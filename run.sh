@@ -61,7 +61,7 @@ else
   chown $USER:$USER /home/$USER/.config
   chown $USER:$USER /home/$USER/.cache
   echo "startxfce4" > /home/$USER/.xsession
-  chown ronald:ronald /home/$USER/.xsession
+  chown $USER:$USER /home/$USER/.xsession
   chmod +x /home/$USER/.xsession
 
   # Make shure DBUS and xrdp-sesman run
